@@ -16,9 +16,7 @@ public interface EventEmitter {
 
     public interface Listener {
         public void onEvent(final Object data) throws Exception;
-    }
-
-    ;
+    };
 
     public EventEmitter on(final String event, final Listener cb) throws Exception;
 
